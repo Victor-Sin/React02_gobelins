@@ -164,6 +164,17 @@ const el3 = (
 
 ```
 
+Attention la syntaxe suivante ne marche pas, vous ne pouvez pas créer des composants frères. Sauf à utiliser la balise virtuelle fragments qui crée un conteneur virtuel.
+
+```js
+
+const el3 = (
+  <div> <h1>Bonjour !</h1> </div>
+  <h2>Le Monde.</h2>
+);
+
+```
+
 ## Attatque XSS
 
 La syntaxe JSX permet de se protéger des injections XSS, les caractères spéciaux seront échapés. Voyez l'exemple ci-dessous :
